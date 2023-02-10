@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "30438",
+      "name": "shop",
+      "font_class": "shop",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "4766775",
+      "name": "shop",
+      "font_class": "shop1",
+      "unicode": "e7ce",
+      "unicode_decimal": 59342
+    },
+    {
+      "icon_id": "6109989",
+      "name": "music",
+      "font_class": "music",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7458770",
+      "name": "Music",
+      "font_class": "Music",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "16619451",
+      "name": "shop",
+      "font_class": "shop2",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "21937720",
+      "name": "ic_music",
+      "font_class": "ic_music",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    }
+  ]
+}

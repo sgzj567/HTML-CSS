@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 选择的是h4类型的第三个元素 */
+    .box>h4:nth-of-type(3) {
+      color: blue;
+      font-size: large;
+    }
+
+    /* 所以这个不存在 */
+    .box>h4:nth-child(3) {
+      color: lawngreen;
+    }
+
+    /* 这个选择的是box盒子里面的h4元素,并且要是第五个元素如果第五个元素不是h4元素就不会选中 */
+    .box>h4:nth-child(5) {
+      color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h4>我是标题1</h4>
+    <h4>我是标题2</h4>
+    <div>我是div</div>
+    <h4>我是标题3</h4>
+    <h4>我是标题4</h4>
+    <h4>我是标题5</h4>
+    <h4>我是标题6</h4>
+    <h4>我是标题7</h4>
+    <h4>我是标题8</h4>
+  </div>
+</body>
+
+</html>

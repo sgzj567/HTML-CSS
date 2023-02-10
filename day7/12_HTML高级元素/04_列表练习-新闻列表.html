@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .item {
+      list-style-type: none;
+      margin-top: 15px;
+    }
+
+    ul>li>a:hover {
+      color: #f04142;
+    }
+
+    ul>li>.ranking {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    ul>li .content {
+      display: inline;
+    }
+
+    .item .image {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url(../../images/hot_icon.svg);
+      position: relative;
+      top: 3px;
+      left: 15px;
+    }
+
+    ul>li:nth-child(1) .ranking {
+      color: #f00;
+    }
+
+    ul>li:nth-child(2) .ranking {
+      color: #0f0;
+    }
+
+    ul>li:nth-child(3) .ranking {
+      color: #00f;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="item">
+      <a href="#">
+        <span class="ranking">1.</span>
+        <div class="content">巴山楚水凄凉地,二十三年弃置身</div>
+        <i class="image"></i>
+      </a>
+    </li>
+    <li class="item">
+      <a href="#">
+        <span class="ranking">2.</span>
+        <div class="content">巴山楚水凄凉地,二十三年弃置身</div>
+        <i class="image"></i>
+      </a>
+    </li>
+    <li class="item">
+      <a href="#">
+        <span class="ranking">3.</span>
+        <div class="content">巴山楚水凄凉地,二十三年弃置身</div>
+      </a>
+    </li>
+
+  </ul>
+</body>
+
+</html>

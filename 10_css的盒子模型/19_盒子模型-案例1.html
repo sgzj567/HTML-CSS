@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .new,
+    .member {
+      color: #fff;
+      border-radius: 13px;
+      background: #e1251b;
+      border-color: transparent;
+    }
+
+    .member {
+      background: #363634;
+      color: #e5d790;
+    }
+
+    .member:hover,
+    .new:hover {
+      background-color: #c81623;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="new">新人福利</button>
+  <button class="member">PLUS会员</button>
+  <script>
+    const newEl = document.querySelector(".new")
+    newEl.addEventListener("click", () => {
+      window.open("https://xinren.jd.com/?channel=99#/home")
+    })
+    const memberEl = document.querySelector(".member")
+    memberEl.addEventListener("click", () => {
+      window.open("https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fplus.jd.com%2Findex%3Fflow_system%3Dappicon%26flow_entrance%3Dappicon3%26flow_channel%3Dpc")
+    })
+  </script>
+</body>
+
+</html>

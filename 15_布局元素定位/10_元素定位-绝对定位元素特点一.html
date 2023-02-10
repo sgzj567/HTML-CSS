@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      /* 相对定位默认情况下是按照标准流定位的 除非自己改变left right top bottom */
+      position: relative;
+      width: 1000px;
+      height: 700px;
+      background-color: red;
+    }
+
+    .box {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 600px;
+      height: 200px;
+      background-color: lemonchiffon;
+    }
+
+    strong {
+      position: absolute;
+      /* 找最临近的祖先元素有定位的,没有定位元素就会找到视口定位 ,有非static定位就相对于祖先元素定位*/
+      left: 0;
+      bottom: 0;
+      /* 绝对定位元素有 position为fixed absolute float 特点一 可以随意设置宽高 不用管是否为行内元素 */
+      width: 200px;
+      height: 20px;
+      background-color: lightcoral;
+    }
+
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    哈哈哈
+  </div>
+  <div class="container">
+    <div class="box">
+      <span>我是span元素</span>
+      <strong>我是strong元素</strong>
+      <img src="../../images/gouwujie01.jpg" alt="">
+      <div>我是div元素</div>
+    </div>
+  </div>
+  <div>呵呵呵呵</div>
+</body>
+
+</html>

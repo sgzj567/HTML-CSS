@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content {
+      width: 1190px;
+      height: 370px;
+      background-color: #f00;
+      margin: 0 auto;
+    }
+
+    .content>.box {
+      margin-right: -10px;
+    }
+
+    .content>.box>.item {
+      float: left;
+      width: 290px;
+      height: 370px;
+      background-color: darkcyan;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .content>.box>.box3>.top,
+    .content>.box>.box3>.bottom,
+    .content>.box>.box4>.top,
+    .content>.box>.box4>.bottom {
+      display: inline-block;
+      width: 290px;
+      height: 180px;
+      background-color: darkgoldenrod;
+      margin: 0 10px 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="box">
+      <div class="item box1">1</div>
+      <div class="item box2">2</div>
+      <div class="item box3">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+      <div class="item box4">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+      <div class="item box3">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+      <div class="item box4">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+      <div class="item box3">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+      <div class="item box4">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

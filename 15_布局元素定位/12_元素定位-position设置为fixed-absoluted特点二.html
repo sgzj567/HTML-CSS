@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      position: relative;
+      width: 500px;
+      height: 200px;
+      background-color: #f00;
+    }
+
+    /* 相对flex布局 这个居中没有兼容性问题 */
+    /* 对于参照对象的宽度 = left  + margin-left +  right + margin-right + 绝对定位元素的实际占用宽度 */
+    /*对于参照对象的高度 = top+ margin-top+  bottom+ margin-bottom+ 绝对定位元素的实际占用高度 */
+    /* c. 如果你希望绝对定位元素的宽高和参照对象一样(占满), 可以设置绝对定位的以下属性为:  */
+    /* ⅰ. left: 0; right:0; top:0; bottom: 0; margin:0; */
+    /* 想要绝对定位居中 也要有宽度 */
+    .container {
+      position: absolute;
+      width: 150px;
+      height: 50px;
+      background-color: lawngreen;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="container"></div>
+  </div>
+</body>
+
+</html>

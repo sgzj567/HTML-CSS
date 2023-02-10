@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+
+    button {
+      color: #fff;
+      background-color: #dc143c;
+      border-color: transparent;
+      border-radius: 5px;
+    }
+
+    table tbody:nth-child(2n+1) {
+      background-color: #fff0f5;
+    }
+
+    .end {
+      font-size: 100;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    table tbody tr :nth-child(4n) {
+      color: #dc143c;
+    }
+
+    table tbody tr:nth-child(2n) td {
+      font-size: x-small;
+      font-weight: 300;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption style=" font-weight: 700;">影院电影放映列表</caption>
+    <thead>
+      <tr>
+        <th>放映时间</th>
+        <th>语言版本</th>
+        <th>放映厅</th>
+        <th>售价(元)</th>
+        <th>选座购票</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>13:15</td>
+        <td rowspan="2">国语3D</td>
+        <td rowspan="2">2号厅</td>
+        <td rowspan="2">¥48.5</td>
+        <td rowspan="2"><button>选座购票</button></td>
+      </tr>
+      <tr>
+        <td>15:00散场</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>13:15</td>
+        <td rowspan="2">国语3D</td>
+        <td rowspan="2">2号厅</td>
+        <td rowspan="2">¥48.5</td>
+        <td rowspan="2"><button>选座购票</button></td>
+      </tr>
+      <tr>
+        <td>15:00散场</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>13:15</td>
+        <td rowspan="2">国语3D</td>
+        <td rowspan="2">2号厅</td>
+        <td rowspan="2">¥48.5</td>
+        <td rowspan="2"><button>选座购票</button></td>
+      </tr>
+      <tr>
+        <td>15:00散场</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>13:15</td>
+        <td rowspan="2">国语3D</td>
+        <td rowspan="2">2号厅</td>
+        <td rowspan="2">¥48.5</td>
+        <td rowspan="2"><button>选座购票</button></td>
+      </tr>
+      <tr>
+        <td>15:00散场</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>13:15</td>
+        <td rowspan="2">国语3D</td>
+        <td rowspan="2">2号厅</td>
+        <td rowspan="2">¥48.5</td>
+        <td rowspan="2"><button>选座购票</button></td>
+      </tr>
+      <tr>
+        <td>15:00散场</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

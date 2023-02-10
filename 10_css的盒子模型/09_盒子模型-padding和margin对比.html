@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 让子盒子左右距离30px */
+    .box {
+      width: 500px;
+      height: 500px;
+      background-color: red;
+      /*这样设置会撑大盒子 但是可以使用怪异盒子模型 */
+      /* padding-left: 30px;
+      box-sizing: border-box; */
+    }
+
+    .box .container {
+      width: 130px;
+      height: 130px;
+      background-color: aquamarine;
+      /* 不会撑开盒子大小   */
+      margin-left: 30px;
+      /* 但是设置上下会有问题 让整个盒子向下了 会传递margin */
+      /* margin-top: 20px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="container"></div>
+  </div>
+</body>
+
+</html>

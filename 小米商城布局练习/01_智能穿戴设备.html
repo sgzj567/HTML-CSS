@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    h2>a {
+      float: right;
+      font-size: 16px;
+      color: #424242;
+      margin-left: 30px;
+      padding-bottom: 3px;
+      transition: all 0.1s ease-in;
+    }
+
+    h2>a:hover {
+      color: #FF6700;
+      border-bottom: 2px solid #f00;
+
+    }
+
+    .clear_fix::after {
+      content: "";
+      display: block;
+      clear: both;
+      overflow: hidden;
+      height: 0;
+    }
+
+    .row {
+      width: 1240px;
+      height: 628px;
+      margin: 0 auto;
+    }
+
+    .row>.left {
+      float: left;
+      width: 234px;
+      height: 614px;
+    }
+
+    .row>.left>.mwatch>img {
+      /* display: block; */
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .row>.right>ul {
+      float: right;
+      width: 992px;
+      height: 614px;
+      margin-right: -14px;
+      background-color: #f5f5f5;
+    }
+
+    .row>.right>ul>li:nth-child(-n+4) {
+      margin-top: 0;
+    }
+
+    .row>.right>ul>li {
+      position: relative;
+      transform: translateY(0);
+      box-sizing: border-box;
+      float: left;
+      width: 234px;
+      height: 300px;
+      background-color: #fff;
+      padding: 20px 0;
+      margin: 0 14px 14px 0;
+      text-align: center;
+      transition: all 0.1s ease-in;
+    }
+
+    .row>.right>ul>li:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+      position: relative;
+      transform: translateY(-2px);
+    }
+
+    .row>.right>ul>li:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    .row>.right>ul>li a>img {
+      width: 160px;
+      height: 160px;
+    }
+
+    .row>.right>ul>li>a>.title {
+      text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #333 !important;
+      margin: 0 10px 2px;
+      font-size: 14px;
+    }
+
+    .row>.right>ul>li>a>.desc {
+      font-size: 12px;
+      color: #b0b0b0;
+      margin: 0 10px 10px;
+    }
+
+    .row>.right>ul>li>a>.price {
+      font-size: 14px;
+      color: #FF6700;
+      margin: 0 10px 14px;
+    }
+
+    .row>.right>ul>li>a>.price>del {
+      color: #b0b0b0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <h2>智能穿戴 <a href="#"><span>耳机</span></a><a href="#"><span>穿戴</span></a></h2>
+    <div class="left clear_fix">
+      <a href="#" class="mwatch">
+        <img src="../images/xmwatch.webp" alt="">
+      </a>
+    </div>
+    <div class="right clear_fix">
+      <ul>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+        <li><a href="#">
+            <img src="../images/miphone.webp" alt="">
+            <h3 class="title">Redmi 12C</h3>
+            <p class="desc">高性能长续航，5000万像素超清双摄</p>
+            <p class="price">
+              <span class="num">699</span><span>元起</span>
+              <del>1099元</del>
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content {
+      width: 1190px;
+      background-color: #f00;
+      margin: 0 auto;
+    }
+
+    .content>.box {
+      margin-right: -10px;
+    }
+
+    .content>.box>.item {
+      float: left;
+      width: 290px;
+      height: 370px;
+      background-color: darkcyan;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .content>.box>.box3>.top,
+    .content>.box>.box3>.bottom,
+    .content>.box>.box4>.top,
+    .content>.box>.box4>.bottom {
+      display: inline-block;
+      width: 290px;
+      height: 180px;
+      background-color: darkgoldenrod;
+      margin: 0 10px 10px 0;
+    }
+
+    /* 清除浮动方法一 设置clear:both 意味着这条元素将在具有浮动元素的下面 如果是left 就是左浮动元素的下面 */
+    .line {
+      /* width: 1200px;
+      height: 10px;
+      margin: 0 auto; */
+      clear: both;
+      background-color: rebeccapurple;
+    }
+
+    .other {
+      height: 100px;
+      margin: 0 auto;
+      background-color: lawngreen;
+    }
+
+    /* 最终解决方案 */
+    /* 给content盒子添加伪元素 来清除浮动 */
+    .clear_fix::after {
+      /* 伪元素要生效必须加content */
+      content: "";
+      clear: both;
+      display: block;
+      /* 为了兼容 加的属性 */
+      visibility: hidden;
+      height: 0;
+    }
+
+    .clear_fix {
+      /* 兼容IE6和7 */
+      *zoom: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="box clear_fix">
+      <div class="item box1">1</div>
+      <div class="item box2">2</div>
+      <div class="item box3">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+      <div class="item box4">
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="line"></div> -->
+  <!-- 由于上面的盒子设置的是float 高度塌陷 所以无法向父级盒子传递高宽 脱离标准流 此时这个盒子上移 -->
+  <!-- 如何让父盒子自动得到子盒子的高度呢 -->
+  <!-- 添加一个元素 设置clear both属性 -->
+  <div class="other">
+  </div>
+</body>
+
+</html>

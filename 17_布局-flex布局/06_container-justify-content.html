@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      width: 600px;
+      height: 600px;
+      background-color: #f00;
+      /* justify-content是设置主轴对齐方式的 */
+      /* flex-end是设置为以main-end对齐的 也就是以主轴最后对齐和flex-direction:rewerse不一样 */
+      /* justify-content: flex-end; */
+      /* /center居中对齐 */
+      /* justify-content: center; */
+      /* 两边挨着 剩余空间平均分配 */
+      /* justify-content: space-between; */
+      /* item之间距相等 与main-end main-start之间的距离是item之间的距离一半*/
+      /* justify-content: space-around; */
+      /* 可以设置左右内边距 */
+      /* padding: 0 10px; */
+      /* item之间的距离相等 与main-end main-start之间的距离与item之间的距离一样 */
+      justify-content: space-evenly;
+    }
+
+    .container>.item {
+      width: 120px;
+      height: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item">1</div>
+    <div class="item item">2</div>
+    <div class="item item">3</div>
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+
+</html>

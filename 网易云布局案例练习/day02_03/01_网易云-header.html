@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    .top-bar {
+      height: 69px;
+      background-color: #333;
+      /* border-bottom: 1px solid #f00; */
+    }
+
+    .top-bar>.header {
+      display: flex;
+      justify-content: space-between;
+      width: 1100px;
+      height: 69px;
+      line-height: 69px;
+      margin: 0 auto;
+      background-color: #333;
+      box-sizing: border-box;
+    }
+
+    .top-bar>.header>.header-left>.logo {
+      float: left;
+      width: 176px;
+      font-size: 12px;
+      background-image: url(./images/topbar.png);
+    }
+
+    .top-bar>.header>.header-left>.logo>a {
+      display: block;
+      padding: 0 20px 0 0;
+      /* 隐藏文字 */
+      text-indent: -9999px;
+    }
+
+    .top-bar>.header>.header-left>.list {
+      display: flex;
+    }
+
+    .top-bar>.header>.header-left>.list>.item {
+      position: relative;
+    }
+
+    .top-bar>.header>.header-left>.list>.active::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 7px;
+      bottom: -1.5px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: url(./images/topbar.png) -226px 0;
+    }
+
+    .top-bar>.header>.header-left>.list>.item>a {
+      display: inline-block;
+      /* 会继承的行高 */
+      /* height: 69px;
+      line-height: 69px; */
+      font-size: 14px;
+      padding: 0 19px;
+      color: #ccc;
+    }
+
+    .top-bar>.header>.header-left>.list>.item>.icon-hot {
+      position: absolute;
+      display: block;
+      width: 28px;
+      height: 19px;
+      top: 21px;
+      right: -15px;
+      background-image: url(./images/topbar.png);
+      background-position: -190px 0;
+    }
+
+    .top-bar>.header>.header-left>.list>.item:hover {
+      cursor: pointer;
+      background-color: #000;
+    }
+
+    .active {
+      background-color: #000;
+    }
+
+    .top-bar>.header>.header-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .top-bar>.header>.header-right>.search {
+      display: flex;
+      /* justify-content: flex-end; */
+      width: 158px;
+      height: 32px;
+      border-radius: 32px;
+      box-sizing: border-box;
+      background-color: #fff;
+      background-image: url(./images/topbar.png);
+      background-position: 0 -99px;
+    }
+
+
+
+
+    .top-bar>.header>.header-right>.search>input {
+      /* display: block; */
+      width: 145px;
+      margin-left: 30px;
+      padding: 0;
+      height: 32px;
+      border-radius: 32px;
+      /* line-height: 32px; */
+      font-size: 12px;
+    }
+
+    .top-bar>.header>.header-right>.author>a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      color: #ccc;
+      margin-left: 28px;
+      width: 90px;
+      height: 32px;
+      border-radius: 20px;
+      border: 1px solid #4f4f4f;
+    }
+
+    .top-bar>.header>.header-right>.author>a:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .top-bar>.header>.header-right>.login>a {
+      display: block;
+      margin-right: 22px;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #787878;
+    }
+
+    .nav {
+      height: 35px;
+      background-color: #c20c0c;
+    }
+
+    .nav>.wrapper_01 {
+      width: 744px;
+      margin: 0 auto;
+    }
+
+    .nav>.wrapper_01>ul {
+      display: flex;
+      height: 34px;
+    }
+
+
+    .nav>.wrapper_01>ul>.item>a>em {
+      display: inline-block;
+      font-size: 12px;
+      padding: 0 13px;
+      margin: 7px 17px 0;
+      height: 20px;
+      line-height: 21px;
+      font-style: normal;
+      color: #fff;
+
+    }
+
+    .nav>.wrapper_01>ul>.item>a>.rec {
+      background-color: #9b0909;
+      border-radius: 20px;
+    }
+
+    .nav>.wrapper_01>ul>.item>a>em:hover {
+      background-color: #9b0909;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="header">
+      <div class="header-left">
+        <h1 class="logo"><a href="#">网易云音乐</a></h1>
+        <ul class="list">
+          <li class="item active"><a href="#">发现音乐</a></li>
+          <li class="item"><a href="#">我的音乐</a></li>
+          <li class="item"><a href="#">关注</a></li>
+          <li class="item"><a href="#">商城</a></li>
+          <li class="item"><a href="#">音乐人</a></li>
+          <li class="item"><a href="#">下载客户端</a>
+            <i class="icon-hot"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="header-right">
+        <div class="search"><input type="text" placeholder="音乐/视频电台/用户"></div>
+        <div class="author"><a href="#">创作者中心</a></div>
+        <div class="login"><a href="#">登录</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="navbar wrapper_01">
+      <ul>
+        <li class="item"><a href="#"><em class="rec">推荐</em></a></li>
+        <li class="item"><a href="#"><em>排行榜</em></a></li>
+        <li class="item"><a href="#"><em>歌单</em></a></li>
+        <li class="item"><a href="#"><em>主播电台</em></a></li>
+        <li class="item"><a href="#"><em>歌手</em></a></li>
+        <li class="item"><a href="#"><em>新碟上架</em></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

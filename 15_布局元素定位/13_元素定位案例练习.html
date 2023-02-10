@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      width: 140px;
+      margin: 0 auto;
+    }
+
+    .item>.top {
+      position: relative;
+      width: 140px;
+      height: 140px;
+    }
+
+    .item>.top>.bg-cover {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: url(../../images/music-sprite01.png);
+      background-position: 0 0;
+    }
+
+    .item>.top>.info {
+      position: absolute;
+      box-sizing: border-box;
+      height: 27px;
+      width: 100%;
+      bottom: 0;
+      padding-left: 10px;
+      padding-top: 3px;
+      background-color: rgba(0, 0, 0, .3);
+    }
+
+    .item>.top>.info>.music-icon1 {
+      /* i是行内元素 */
+      position: relative;
+      display: inline-block;
+      width: 14px;
+      height: 11px;
+      /* 背景图片一定要设置宽高才能生效 */
+      background-image: url(../../images/music-sprite02.png);
+      background-position: 0 -24px;
+    }
+
+    .item>.top>.info>.count {
+      color: #ccc;
+      font-size: 12px;
+
+    }
+
+    .item>.top>.info>.music-play {
+      /* i是行内元素 */
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      right: 10px;
+      width: 16px;
+      height: 17px;
+      /* 背景图片一定要设置宽高才能生效 */
+      background-image: url(../../images/music-sprite02.png);
+      background-position: 0 0;
+
+    }
+
+    .item>.bottom {
+      position: relative;
+      font-size: 14px;
+      top: 8px;
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item">
+    <div class="top">
+      <img src="../../images/img1.jpg" alt="">
+      <a href="#" class="bg-cover"></a>
+      <div class="info">
+        <i class="music-icon1"></i>
+        <span class="count">3169万</span>
+        <i class="music-play"></i>
+      </div>
+    </div>
+    <div class="bottom">
+      不得了！这些英文歌的热评信息量好大……
+    </div>
+  </div>
+</body>
+
+</html>

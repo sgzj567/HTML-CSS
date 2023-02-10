@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      /* 通过继承让 tr继承文本内样式 */
+      text-align: center;
+      border-collapse: collapse;
+
+    }
+
+    td {
+      border: 1px solid #000;
+      padding: 5px;
+    }
+
+    table tr:nth-child(1) {
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>排名</td>
+      <td>股票名称</td>
+      <td>股票代码</td>
+      <td>股票价格</td>
+      <td>股票涨跌</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>贵州茅台</td>
+      <td>600519</td>
+      <td>1800</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>腾讯控股</td>
+      <td>600519</td>
+      <td>1800</td>
+      <td>5%</td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      width: 600px;
+      height: 600px;
+      background-color: #ccc;
+      justify-content: space-between;
+    }
+
+    .container>.item {
+      width: 120px;
+      height: 120px;
+      background-color: aqua;
+      flex-grow: 1;
+    }
+
+    .container>.item2 {
+      font-size: larger;
+      /* 默认是0 再分配剩余空间 值为非负数 */
+      /* 当main axis方向上有剩余size时flex-grow才有效 */
+      flex-grow: 2;
+    }
+
+    .container>.item3 {
+      font-size: small;
+      /* 单独给元素设置 覆盖父级的 在侧轴的排列方式 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+  <script src="./js/itemRandomColor.js"></script>
+</body>
+
+</html>

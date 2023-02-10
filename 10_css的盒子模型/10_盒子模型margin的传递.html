@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 防止margin-top传递 触发bfc 给父盒子设置border 直接改为设置父元素的padding+border-sixing */
+    /* margin-top传递原因 块级元素顶部线与父元素顶部线重叠 那么块级元素的top值会传递给父元素 */
+    /* margin-bottom 如果块级元素与父级盒子低部线重叠,并且父元素高度是auto,那么此时margin-bottom会传递 */
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .box {
+      width: 500px;
+      height: 500px;
+      background-color: aquamarine;
+      /* margin-top: 30px; */
+    }
+
+    .container {
+      width: 130px;
+      height: 130px;
+      background-color: red;
+      /* margin-top只有上下会传递 左右不会传递 */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="container"></div>
+  </div>
+</body>
+
+</html>

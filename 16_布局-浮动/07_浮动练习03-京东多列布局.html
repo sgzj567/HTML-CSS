@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content {
+      width: 1190px;
+      height: 800px;
+      background-color: orange;
+      margin: 0 auto;
+    }
+
+    .item {
+      float: left;
+      width: 230px;
+      height: 322px;
+      margin-right: 10px;
+      background-color: fuchsia;
+    }
+
+    /* 既然用了浮动 所以要考虑兼容性问题 所以不要用这个伪类选择器 */
+    /* .item:nth-child(5n) {
+      margin-right: 0;
+    } */
+    /* 最终解决方案 */
+    /* 添加一个box盒子 */
+    .box {
+      /* 因为父级盒子宽度=子级盒子宽度+ml+mr */
+      /* 这里的是1190=本来是1190+-10但是最后变成了 */
+      /* 1190=1200-10 */
+      /* margin左右不会折叠 */
+      margin-right: -10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="box">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+    </div>
+  </div>
+</body>
+
+</html>

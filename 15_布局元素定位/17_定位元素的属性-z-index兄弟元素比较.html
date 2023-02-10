@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      background-color: #f00;
+    }
+
+    .box2 {
+      left: 20px;
+      top: 20px;
+      background-color: lawngreen;
+      /* z-index要给有定位的元素设置 */
+    }
+
+    .info {
+      /* z-index比较的是兄弟元素之间的定位 所以z-index无效 */
+      position: absolute;
+      z-index: 999;
+    }
+
+    .box3 {
+      left: 30px;
+      top: 30px;
+      background-color: khaki;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item box1">1</div>
+  <div class="container">
+    <div class="item box2">
+      <div class="info">哈哈哈</div>
+      <div>呵呵呵</div>
+    </div>
+  </div>
+  <div class="item box3">3</div>
+</body>
+
+</html>
